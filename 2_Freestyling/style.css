@@ -1,0 +1,144 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* The top code is Resetter */
+/* nav */
+nav {
+  display: flex;
+  width: 100%;
+  background-color: #444;
+  justify-content: space-between;
+  padding: 15px;
+  top: 0;
+  position: fixed;
+  font-family: "Poppins", serif;
+}
+
+nav span {
+  color: whitesmoke;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li a {
+  color: #9e9e9e;
+  text-decoration: none;
+  padding: 1em;
+  position: relative; /* biar bisa ngedit child absolutenya */
+}
+/*  */
+li a::after {
+  content: ""; /* Harus ada Content biar keliatan yang kita edit nya */
+  position: absolute; /* parent nya harus position relative */
+  height: 4px;
+  width: 100%;
+  background-color: orange;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+li a:hover {
+  color: white;
+}
+
+li a:hover::after {
+  opacity: 1;
+}
+
+li a.active {
+  color: white;
+}
+
+.region {
+  margin: 65px 20px 20px 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h1.title {
+  position: relative;
+  width: max-content;
+  margin-bottom: 20px;
+}
+
+h1.title::after {
+  position: absolute;
+  content: "";
+  height: 6px;
+  width: 0;
+  border-radius: 0 5px 5px 0;
+  background-color: orange;
+  left: 0;
+  bottom: 4px;
+  transition: all 0.3s;
+}
+
+h1.title:hover::after {
+  width: 100%;
+}
+
+p {
+  margin-bottom: 20px;
+  text-align: justify;
+  font-family: "Rosarivo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.call-to-action {
+  background: linear-gradient(to right, orange, rgb(255, 255, 255));
+  padding: 2px 0px 2px 15px;
+  margin-bottom: 15px;
+}
+
+ul.action-list {
+  margin-bottom: 20px;
+  list-style-position: inside;
+}
+
+.flex {
+  display: flex;
+}
+
+.p-flex {
+  max-width: 400px;
+}

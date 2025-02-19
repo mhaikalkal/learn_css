@@ -1,0 +1,15 @@
+/* External */
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 1em;
+}
+p {
+  font-family: "consolas";
+  font-size: 18px;
+  color: rgb(65, 246, 28);
+  padding: 5px;
+  margin-bottom: 60px;
+  border-radius: 5px;
+}
