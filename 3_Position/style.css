@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.scroll {
+  height: 2000px;
+}
+
+.container-1 {
+  margin-top: 50px;
+  margin-left: 50px;
+  border: 2px dashed brown;
+  height: 600px;
+  width: 400px;
+}
+
+.container-2 {
+  margin: 100px auto 0 auto;
+  border: 2px dashed blue;
+  height: 450px;
+  width: 250px;
+  position: relative;
+}
+
+/* merupakan bawaan sebuah element*/
+.static {
+  background-color: blueviolet;
+  height: 100px;
+  width: 100px;
+  color: white;
+  position: static;
+  top: 300px; /* Gaakan bisa diubah posisinya, statis */
+}
+
+/* Absolute, parent-nya harus memiliki properti position relative, kalo enggak dia ambil posisi root. */
+/* Kalau misalkan grandparent-nya punya position relative juga gimana? yang dia ambil otomatis yang terdekat */
+.absolute {
+  background-color: green;
+  height: 100px;
+  width: 100px;
+  color: white;
+  position: absolute;
+  bottom: -10px;
+  right: 15px;
+}
+
+/* Relative, posisi awalnya akan relative dengan parent nya. */
+.relative {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  color: white;
+  position: relative;
+  top: 200px; /* Gaakan bisa pake 0 harus ada satuan, gaakan gerak bebas kaya absolute */
+  left: 270px;
+  z-index: 1; /* Untuk numpuk, kalo misalkan ada elemen lain yg valuenya >1, maka si relative ini akan dibawahnya */
+}
+
+.sticky {
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+  color: black;
+  position: sticky;
+  top: 0; /* ketika elemen mendekati top:0, maka dia akan ngikut sampai element wrapper/parentnya */
+}
+
+/* Fixed, dia akan nempel dilayar. pas nge scroll dia ada disitu selamanya */
+.fixed {
+  background-color: orange;
+  height: 100px;
+  width: 100px;
+  color: white;
+  position: fixed;
+  top: 30px;
+  right: 100px;
+}
