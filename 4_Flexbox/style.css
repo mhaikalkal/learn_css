@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rosarivo", serif;
+  font-weight: 750;
+  font-style: normal;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.second {
+  margin-top: 20px;
+}
+
+/* display flex */
+.container {
+  margin-inline: auto;
+  border: 3px solid salmon;
+  min-height: 300px; /* jika child tidak punya height, maka child nya mengikuti ukuran parent, */
+  max-width: 750px;
+  display: flex; /* dengan display flex, child nya akan menjadi flex item */
+  /* gap: 20px; */ /* mirip margins */
+  justify-content: center; /* horizontal */
+  align-items: center; /* vertical */
+  /* flex-direction: row; */ /* default nya row, */
+  /* flex-wrap: wrap; */ /* default nya nowrap. jadi kalo windowsnya di resize jadi kecil dia akan tetap, maka akan pverflow, kalo pake wrap, maka dia akan ambil space dibawahnya (containernya) */
+  flex-flow: row wrap; /* shorthand flex-direction & flex-wrap */
+  align-content: center; /* ini keseluruhan child mirip justify-content*/
+}
+
+.box {
+  font-size: 1.3rem;
+  background-color: black;
+  color: whitesmoke;
+  height: 100px;
+  /* min-height: 100px; */ /* dia akan ikut ukutan container / parent */
+  min-width: 100px;
+  padding: 5px;
+  border: 1px solid snow;
+
+  /* child pun bisa jadi flex juga, ya jadi flexboxception lah wkwk */
+  /* isi text dalam box mau kita center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container.second {
+  flex-flow: row nowrap;
+
+  .box.two {
+    background-color: goldenrod;
+    min-width: none;
+    /* flex-shrink: 1; */ /* buar keliatan kita flex-wrap nya harus di nowrap */
+    /* flex-basis: 200px; */ /* mirip width, kalo width dimatiin pake ini aja */
+    flex: 0 1 200px; /* shorthand flex-grow flex-shrink flex-basis */
+  }
+
+  .box.two:nth-child(2) {
+    flex-shrink: 3; /* artinya, box two ke-2 akan mengecil 3x dari sibling dia yng lain (coba resize window) */
+  }
+}
