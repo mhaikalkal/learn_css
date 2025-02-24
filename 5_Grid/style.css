@@ -31,16 +31,16 @@ h6 {
 .wrapper {
   /* Mau nyoba nested Grid */
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   grid-auto-rows: minmax(100px, auto, 100px);
 
   /* nanti grid itemnya dinamain sesuai template ini. ini tuh previewnya */
-  /* kenapa ada 6 kolom? karena di template-column nya pae repeat 6 */
+  /* kenapa ada 6 kolom? karena di template-column nya pae repeat  6 */
   grid-template-areas:
-    "hd hd hd hd hd hd" /* atas */
-    "mn mn mn mn sb sb" /* isi */
-    "mn2 mn2 mn2 mn2 sb sb" /* isi */
-    "ft ft ft ft ft ft"; /* bawah */
+    "hd hd hd hd hd hd hd hd" /* atas */
+    "mn mn mn mn mn mn sb sb" /* isi */
+    "mn2 mn2 mn2 mn2 mn2 mn2 sb sb" /* isi */
+    "ft ft ft ft ft ft ft ft"; /* bawah */
   /* udah kaya variable aja, jadi nanti si hd, mn, m2, ft, ini kita assign ke elemen yg kita mau */
   /* itu udah kaya placement item nya gitu */
   column-gap: 0.5rem;
@@ -109,7 +109,9 @@ h6 {
 
 .box_second:first-child {
   background-color: blue;
-  grid-column: 1/4; /* dimulai dari 1 sampai 4 horizontal */
+  /* grid-column-start: 1; */ /* awal dimulainya item */
+  /* grid-column-end: 4; */ /* akhirnya */
+  grid-column: 1/4; /* dimulai dari 1 sampai 4 horizontal shorthand code atas */
   grid-row: 1/3; /* dimulai dari 1 sampai 3 vertical */
   display: grid;
   /* align-content: center; */ /* isi grid vertical */
