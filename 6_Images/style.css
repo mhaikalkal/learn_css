@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Begin Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block; /* image defaultnya inline, maka kalo kita masukin img, ada spcae gap kecil dibawah image nya. makannya kita reset */
+}
+/* End Reset */
+
+/* Utility Classes */
+.nowrap {
+  white-space: nowrap;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+/* End Utility Classes */
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: #f2f2f2;
+  min-width: 100vh;
+}
+
+.container {
+  background-color: rgb(214, 101, 164);
+  background-image: url("../6_Images/Img/samurai.jpg"); /* ini emang gambar repeat sih sengaja biar tau no-repeat*/
+  background-repeat: no-repeat; /* defaultnya repeat */
+  background-size: cover;
+  /* background-size: contain; */ /* dia ambil heightnya , jadi keliatan semua imagenya (ga kepotong), tapi kalo width nya gak cukup untuk nutup container, maka dia akan repeat otomatis*/
+  background-position: top;
+}
+
+.hero {
+  padding: 20px;
+  border-bottom: solid 3px darkmagenta;
+  display: flex;
+  justify-content: flex-start; /* horizontal */
+  align-items: center;
+  gap: 30px;
+  background-color: rgba(
+    77,
+    53,
+    80,
+    0.35
+  ); /* ini udah kek filter sendiri jir */
+}
+
+.h1 {
+  font-size: 300%;
+  background-color: rgba(255, 255, 252, 0.7);
+  padding-inline: 20px;
+  border-radius: 20px;
+}
+
+.profile-pic-figure {
+  width: 20%; /* parentnya adalah class hero yang widthnya 100%, chilkd nya ini kita set 35% jadi 35% dari parent */
+}
+
+.profile-pic-figure img {
+  width: 100%; /* parentnya adalah class profile-pic-figure yang widthnya 35% width hero, jadi kita ambil semua space si profile-pic-figure*/
+  height: auto; /* biar responsive kita set auto karena dia ngikutin si width */
+  min-width: 100px;
+  border: solid darkorchid 3px;
+  border-radius: 50%;
+}
+
+.example {
+  border: 1px solid blue;
+  padding-left: 1rem;
+}
+
+.example img {
+  /* banyak yg bilang, jangan set height, set width aja, karena nanti si height bakal ngikutin */
+  width: 25%; /* ini tuh sebenernya bukan imagenya, tapi containernya */
+  height: auto; /* image nya otomatis scale down jika lebih besar dibanding container nya */
+}
+
+.wrapper {
+  min-height: 100vh;
+  background-color: azure;
+  /* linear-gradient defaultnya to bottom, itu warna mau sebanyak apapun bisa */
+  background-image: url(), linear-gradient(to bottom, darkmagenta, #fff);
+}
