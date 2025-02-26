@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Begin Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* End Reset */
+
+/* Styles */
+body {
+  font: 1.5rem "Poppins", sans-serif;
+  min-height: 100vh;
+  background-color: #475569;
+  background-image: radial-gradient(#bababa, #475569);
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+nav,
+main,
+footer {
+  display: grid;
+  /* justify-content: center;
+  align-items: center; */
+  text-align: center;
+  align-items: center;
+}
+
+header,
+footer {
+  position: sticky;
+  background-color: #29203c;
+  color: whitesmoke;
+}
+
+header {
+  top: 0;
+}
+
+nav {
+  background-color: whitesmoke;
+  border-bottom: 2px solid #29203c;
+  color: #000;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  bottom: 0;
+}
+
+/* aspect-ratio : 16/10, 16/9, 4/3 */
+/* orientation : landscape, potrait */
+
+/* We design from lowest first (mobile first) */
+/* Small */
+@media screen and (min-width: 576px) {
+  body {
+    background-color: darkolivegreen;
+    background-image: radial-gradient(whitesmoke, darkolivegreen);
+  }
+
+  header,
+  footer {
+    background-color: #111;
+  }
+
+  nav {
+    display: none;
+  }
+
+  main h2::after {
+    content: " Small";
+  }
+}
+
+/* medium */
+@media screen and (min-width: 768px) {
+  body {
+    background-color: darkorchid;
+    background-image: radial-gradient(whitesmoke, darkorchid);
+  }
+
+  main h2::after {
+    content: " Medium";
+  }
+}
+
+/* large */
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: darkred;
+    background-image: radial-gradient(whitesmoke, darkred);
+  }
+
+  main h2::after {
+    content: " Large";
+  }
+}
+
+/* large */
+@media screen and (min-width: 1440px) {
+  body {
+    background-color: darkgoldenrod;
+    background-image: radial-gradient(whitesmoke, darkgoldenrod);
+  }
+
+  main h2::after {
+    content: " Xtra Large";
+  }
+}
