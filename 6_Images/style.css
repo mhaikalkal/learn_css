@@ -89,5 +89,26 @@ body {
   min-height: 100vh;
   background-color: azure;
   /* linear-gradient defaultnya to bottom, itu warna mau sebanyak apapun bisa */
-  background-image: url(), linear-gradient(to bottom, darkmagenta, #fff);
+  background-image: url("/6_Images/Img/bubbles.png"),
+    linear-gradient(to bottom, darkmagenta, #fff);
+  /* ke 1 : url, ke 2 : linear-gradient */
+  /* maka untuk styling yang lain berhubungan dengan background, yg ke 1 untuk url, ke 2 utk linear */
+  background-repeat: repeat-x, no-repeat;
+  /* repeat-x untuk url, no-repeat untuk linear */
+  /* keliatan kok posisi awal buble nya berubah */
+  background-position: top right;
+  background-size: 20%, auto;
+  /* 20% untuk url, auto untuk linear */
+}
+
+.name-clip {
+  text-align: center;
+  background-image: url("/6_Images/Img/Samurai.jpg");
+  background-size: 100%;
+  background-position: center;
+  font-size: 18rem;
+  font-weight: 800;
+  background-clip: text;
+  -webkit-background-clip: text; /* Chrome, Safari 11+ */
+  color: rgba(255, 255, 255, 0.3);
 }
