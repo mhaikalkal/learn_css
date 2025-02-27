@@ -1,0 +1,186 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Start Reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-padding-top: 90px;
+}
+
+img {
+  display: block;
+  /* width: 100%; */
+  /* height: auto; */
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+/* End Reset */
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* height: 1vh; */
+  height: 1000px;
+  /* background-image: radial-gradient(grey, #222); */
+  background-color: rgb(174, 174, 174);
+}
+
+nav.container {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  /* border: solid 3px green; */
+}
+
+nav .wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: #222; */
+  backdrop-filter: blur(10px);
+  padding: 0.5em;
+}
+
+.logo {
+  display: flex;
+  /* align-content: center; */
+}
+
+.logo img {
+  display: block;
+  width: 35px;
+  height: auto;
+}
+
+.logo:hover {
+  .logo-svg {
+    fill: white;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.header-menu {
+  display: flex;
+  gap: 1em;
+}
+
+.header-item {
+  text-decoration: none;
+  color: #666;
+}
+
+.active {
+  color: white;
+  font-weight: 700;
+}
+
+.header-item:hover {
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-svg {
+  display: flex;
+  gap: 1em;
+}
+
+.icon-link:hover {
+  fill: white;
+  transition: all 0.2s ease-in-out;
+}
+
+main.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  align-items: center;
+  min-height: 1vh;
+  /* border: solid red 2px; */
+}
+
+.main-text {
+  margin: 50px;
+  /* border: solid red 2px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-title {
+}
+
+.showcase {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: #444;
+  padding: 2rem;
+  border-radius: 20px;
+  /* border: solid blue 2px; */
+}
+
+.project-card {
+  width: 450px;
+  max-height: max-content;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+img.card-img {
+  height: auto;
+  width: 100%;
+  object-fit: cover; /* kalo buat img pake ini*/
+  object-position: top; /* kalo yang background-position itu untuk yang di css isi nya */
+}
+
+.project-detail {
+  padding: 1rem;
+}
+
+.project-name {
+  margin-bottom: 0.75rem;
+}
+
+.project-desc {
+  margin-bottom: 0.75rem;
+}
+
+.sauce {
+  display: flex;
+  margin-bottom: 0.75rem;
+  gap: 10px;
+}
+
+.sauce-item {
+  padding: 0.5rem;
+  background-color: #777;
+  border-radius: 15px;
+  color: white;
+}
