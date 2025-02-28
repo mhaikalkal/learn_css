@@ -3,21 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Project Showcase</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body id="home">
     <!-- nav -->
     <nav class="container">
       <div class="wrapper">
         <!-- Logo -->
-        <div class="logo">
+        <div class="logo logo-mobile">
+          <!-- logo mobile -->
           <a href="#home" class="logo-link">
-            <!-- <img src="/Card/logo/MHB.svg" alt="" width="30x" height="30px" /> -->
             <svg
               role="img"
               class="fill-current"
-              width="35px"
+              width="60"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 600 600"
             >
@@ -56,6 +56,58 @@ M251.002075,498.802612
 	C349.028931,501.000000 347.411438,501.000000 345.793915,501.000000 
 	C315.795135,501.000000 285.796265,501.026306 255.797806,500.926971 
 	C254.198044,500.921692 252.601791,499.857330 251.002075,498.802612 
+z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div class="logo logo-desktop">
+          <!-- logo desktop -->
+          <a href="#home" class="logo-link logo-desktop">
+            <!-- logo mobile -->
+            <svg
+              role="img"
+              class="fill-current"
+              width="35"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 600 600"
+            >
+              <path
+                class="logo-svg"
+                fill="#000000"
+                opacity="1.000000"
+                stroke="none"
+                d="
+M51.000000,480.999695 
+C51.000000,354.205048 51.000000,227.910263 51.000000,101.493073 
+C217.546310,101.493073 383.915375,101.493073 550.501587,101.493073 
+C550.501587,234.204208 550.501587,367.356018 550.501587,500.754059 
+C517.631470,500.754059 484.563690,500.754059 451.112427,500.754059 
+C451.112427,401.309509 451.112427,301.915955 451.112427,202.261566 
+C417.663055,202.261566 384.595154,202.261566 351.131439,202.261566 
+C351.131439,234.999252 351.131439,267.735748 351.131439,300.735077 
+C317.669830,300.735077 284.601868,300.735077 251.138123,300.735077 
+C251.138123,268.007477 251.138123,235.270966 251.138123,202.268250 
+C217.676559,202.268250 184.608612,202.268250 151.157104,202.268250 
+C151.157104,301.645721 151.157104,401.039246 151.157104,500.716095 
+C117.708168,500.716095 84.640076,500.716095 51.000000,500.716095 
+C51.000000,494.359436 51.000000,487.929504 51.000000,480.999695 
+z"
+              />
+              <path
+                class="logo-svg"
+                fill="#000000"
+                opacity="1.000000"
+                stroke="none"
+                d="
+M251.002075,498.802612 
+C251.000275,466.027069 251.000275,433.734924 251.000275,401.222046 
+C284.419922,401.222046 317.490784,401.222046 350.780975,401.222046 
+C350.780975,434.425964 350.780975,467.496796 350.780975,501.000000 
+C349.028931,501.000000 347.411438,501.000000 345.793915,501.000000 
+C315.795135,501.000000 285.796265,501.026306 255.797806,500.926971 
+C254.198044,500.921692 252.601791,499.857330 251.002075,498.802612 
 z"
               />
             </svg>
@@ -133,8 +185,11 @@ z"
     <!-- Main -->
     <main class="container">
       <div class="main-text">
-        <h1 class="main-title">MY WORKS</h1>
-        <span class="mumble">I code stuff.</span>
+        <div class="main-img">
+          <img src="/Test/img/huh.gif" alt="" width="300" />
+        </div>
+        <h1 class="main-title">"Haikal code stuff."</h1>
+        <span class="mumble"> ─ The Cat, probably.</span>
       </div>
 
       <div class="showcase">
@@ -142,7 +197,7 @@ z"
         <div class="project-card" id="project-1">
           <div class="project-img">
             <img
-              src="/Card/img/eva1.jpg"
+              src="/Test/img/eva1.jpg"
               alt="Project 1"
               width="450"
               class="card-img"
@@ -159,9 +214,15 @@ z"
               <span class="sauce-item">Sauce</span>
             </div>
             <div class="stack">
-              <span class="stack-item">JS</span>
-              <span class="stack-item">CSS</span>
-              <span class="stack-item">ReactJS</span>
+              <span class="stack-item">
+                <img src="/Test/logo/reactjs.png" alt="" height="100" />
+              </span>
+              <span class="stack-item">
+                <img src="/Test/logo/html5.png" alt="" height="100" />
+              </span>
+              <span class="stack-item">
+                <img src="/Test/logo/tailwindcss.png" alt="" height="100" />
+              </span>
             </div>
           </div>
         </div>
@@ -171,7 +232,7 @@ z"
         <div class="project-card" id="project-2">
           <div class="project-img">
             <img
-              src="/Card/img/eva2.png"
+              src="/Test/img/eva2.png"
               alt="Project 1"
               width="450"
               class="card-img"
@@ -187,9 +248,21 @@ z"
               <span class="sauce-item">Sauce</span>
             </div>
             <div class="stack">
-              <span class="stack-item">JS</span>
-              <span class="stack-item">CSS</span>
-              <span class="stack-item">ReactJS</span>
+              <span class="stack-item">
+                <img src="/Test/logo/html5.png" alt="" height="100" />
+              </span>
+              <span class="stack-item">
+                <img src="/Test/logo/codeigniter.png" alt="" height="100" />
+              </span>
+              <span class="stack-item">
+                <img src="/Test/logo/mysql.png" alt="" height="100" />
+              </span>
+              <span class="stack-item">
+                <img src="/Test/logo/bootstrap.png" alt="" height="100" />
+              </span>
+              <span class="stack-item">
+                <img src="/Test/logo/javascript.png" alt="" height="100" />
+              </span>
             </div>
           </div>
         </div>
@@ -199,7 +272,7 @@ z"
         <div class="project-card" id="project-3">
           <div class="project-img">
             <img
-              src="/Card/img/eva3.jpg"
+              src="/Test/img/eva3.jpg"
               alt="Project 1"
               width="450"
               class="card-img"
@@ -215,9 +288,15 @@ z"
               <span class="sauce-item">Sauce</span>
             </div>
             <div class="stack">
-              <span class="stack-item">JS</span>
-              <span class="stack-item">CSS</span>
-              <span class="stack-item">ReactJS</span>
+              <span class="stack-item">
+                <img src="/Test/logo/golang.png" alt="" height="100" />
+              </span>
+              <span class="stack-item">
+                <img src="/Test/logo/nodejs.png" alt="" height="100" />
+              </span>
+              <span class="stack-item">
+                <img src="/Test/logo/mysql.png" alt="" height="100" />
+              </span>
             </div>
           </div>
         </div>
@@ -227,7 +306,7 @@ z"
         <div class="project-card" id="project-4">
           <div class="project-img">
             <img
-              src="/Card/img/eva4.png"
+              src="/Test/img/eva4.png"
               alt="Project 1"
               width="450"
               class="card-img"
@@ -243,15 +322,97 @@ z"
               <span class="sauce-item">Sauce</span>
             </div>
             <div class="stack">
-              <span class="stack-item">JS</span>
-              <span class="stack-item">CSS</span>
-              <span class="stack-item">ReactJS</span>
+              <span class="stack-item">
+                <img src="/Test/logo/php.png" alt="" height="100" />
+              </span>
+              <span class="stack-item">
+                <img src="/Test/logo/html5.png" alt="" height="100" />
+              </span>
+              <span class="stack-item">
+                <img src="/Test/logo/javascript.png" alt="" height="100" />
+              </span>
+              <span class="stack-item">
+                <img src="/Test/logo/css3.png" alt="" height="100" />
+              </span>
             </div>
           </div>
         </div>
-
         <!-- End Project 4 -->
       </div>
     </main>
+
+    <footer class="container">
+      <div class="inner-footer">
+        <div class="left-footer">
+          <a href="#home" class="logo-link">
+            <div class="left-footer-img">
+              <svg
+                role="img"
+                class="fill-current"
+                width="40px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 600 600"
+              >
+                <path
+                  class="logo-svg"
+                  fill="#fff"
+                  opacity="1.000000"
+                  stroke="none"
+                  d="
+  M51.000000,480.999695 
+    C51.000000,354.205048 51.000000,227.910263 51.000000,101.493073 
+    C217.546310,101.493073 383.915375,101.493073 550.501587,101.493073 
+    C550.501587,234.204208 550.501587,367.356018 550.501587,500.754059 
+    C517.631470,500.754059 484.563690,500.754059 451.112427,500.754059 
+    C451.112427,401.309509 451.112427,301.915955 451.112427,202.261566 
+    C417.663055,202.261566 384.595154,202.261566 351.131439,202.261566 
+    C351.131439,234.999252 351.131439,267.735748 351.131439,300.735077 
+    C317.669830,300.735077 284.601868,300.735077 251.138123,300.735077 
+    C251.138123,268.007477 251.138123,235.270966 251.138123,202.268250 
+    C217.676559,202.268250 184.608612,202.268250 151.157104,202.268250 
+    C151.157104,301.645721 151.157104,401.039246 151.157104,500.716095 
+    C117.708168,500.716095 84.640076,500.716095 51.000000,500.716095 
+    C51.000000,494.359436 51.000000,487.929504 51.000000,480.999695 
+  z"
+                />
+                <path
+                  class="logo-svg"
+                  fill="#fff"
+                  opacity="1.000000"
+                  stroke="none"
+                  d="
+  M251.002075,498.802612 
+    C251.000275,466.027069 251.000275,433.734924 251.000275,401.222046 
+    C284.419922,401.222046 317.490784,401.222046 350.780975,401.222046 
+    C350.780975,434.425964 350.780975,467.496796 350.780975,501.000000 
+    C349.028931,501.000000 347.411438,501.000000 345.793915,501.000000 
+    C315.795135,501.000000 285.796265,501.026306 255.797806,500.926971 
+    C254.198044,500.921692 252.601791,499.857330 251.002075,498.802612 
+  z"
+                />
+              </svg>
+              <h4 class="logo-text">.kal</h4>
+            </div>
+          </a>
+          <h3 class="left-text">© 2025</h3>
+        </div>
+
+        <div class="mid-footer">
+          <h3 class="mid-text">You must be tired Scrolling this far.</h3>
+          <div class="mid-footer-img mobile">
+            <img src="/Test/img/spin.gif" alt="spinning car" width="300" />
+          </div>
+          <div class="mid-footer-img desktop">
+            <img src="/Test/img/spin.gif" alt="spinning car" width="100" />
+          </div>
+          <h3 class="mid-text">Here's your reward.</h3>
+        </div>
+
+        <div class="right-footer">
+          <span class="right-text">Hit me up.</span>
+          <span class="right-contact">+62 420 6969 XXXX</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
