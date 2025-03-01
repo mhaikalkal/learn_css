@@ -64,3 +64,16 @@ body {
   padding: var(--PADDING);
   border-radius: var(--BORDERS-RAD);
 }
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.link-item:before {
+  content: "🔥 ";
+}
