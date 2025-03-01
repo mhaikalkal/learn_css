@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Begin Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block; /* image defaultnya inline, maka kalo kita masukin img, ada spcae gap kecil dibawah image nya. makannya kita reset */
+}
+/* End Reset */
+
+/* Variables */
+:root {
+  /* Color */
+  --BGCOLOR: rgb(80, 0, 80);
+  --DARKCOLOR: #333;
+  --LIGHTCOLOR: whitesmoke;
+  --TEXTCOLOR1: var(--LIGHTCOLOR);
+
+  /* Font */
+  --FF: "Poppins", sans-serif;
+  --FS: 1rem;
+  --FS-XL: 3rem;
+
+  /* General */
+  --PADDING: 0.5rem;
+  --SHADOWS: 0 6px 5px -5px var(--DARKCOLOR);
+  --BORDERS: solid 2px var(--DARKCOLOR);
+  --BORDERS-RAD: 15px;
+}
+
+body {
+  height: 1vh;
+  background-color: var(--BGCOLOR);
+  font-family: var(--FF);
+  font-style: var(--FS);
+}
+
+.container {
+  margin: var(--PADDING);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 80%;
+  padding: 2rem;
+  background-color: var(--LIGHTCOLOR);
+  border-radius: var(--BORDERS-RAD);
+}
+
+.box {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--PADDING);
+  justify-content: center;
+  align-items: center;
+  border: var(--BORDERS);
+  padding: var(--PADDING);
+  border-radius: var(--BORDERS-RAD);
+}
